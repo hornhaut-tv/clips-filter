@@ -1,0 +1,36 @@
+$(function() {
+    // $('#clip-modal').modal('show');
+    $('#clip-modal').on('shown.bs.modal', function(event) {
+        let clip   = $(event.relatedTarget);
+        let modal  = $('#clip-modal');
+        let iframe = modal.find('iframe');
+
+        let modalTitle   = modal.find('.modal-title');
+        let modalChannel = modal.find('.modal-channel');
+        let modalAvatar  = modal.find('.modal-avatar');
+        
+        let preheight = modal.find('.modal-meta').height();
+        let height = $(window).height() - 80;
+        iframe.height(height);
+
+        let title   = clip.data('title');
+        let channel = clip.data('channel');
+        let avatar  = clip.data('avatar');
+
+        iframe.attr('src', clip.data('src'));
+        modalTitle.text(title);
+        modalChannel.text(channel);
+        modalAvatar.attr('src', avatar);
+    });
+
+    $('#clip-modal').on('hidden.bs.modal', function(event) {
+        let modal = $('#clip-modal');
+        let iframe = modal.find('iframe');
+        let modalTitle = modal.find('.modal-title');
+
+        iframe.attr('src', '');
+        modalTitle.text('');
+        modalChannel.text('');
+        modalAvatar.attr('src', '');
+    });
+});

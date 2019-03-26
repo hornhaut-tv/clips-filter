@@ -1,0 +1,24 @@
+// Twitch API Client ID
+var twitchClientId = 'ob176mf0o047xuv2ihgyz0diesz1wn';
+
+$(function() {
+    // Enable popper.js
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // Hide flash message container when no flashes left
+    $('.close-handler button.close').on('click', function() {
+        var remaining = $(this).parent('.alert').siblings().length;
+        console.log(remaining);
+        if(remaining < 1) { $(this).parents('.jumbotron').slideUp(); }
+    });
+
+    var height = $('#start-what-is-hornhaut iframe').width() / 16 * 9;
+    $('#start-what-is-hornhaut iframe').height(height);
+
+    // Textarea autogrow
+    $("textarea").keyup(function(e) {
+        while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
+            $(this).height($(this).height()+1);
+        };
+    });
+});

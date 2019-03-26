@@ -1,0 +1,920 @@
+/* ===ELEMENTS=== */
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Open+Sans');
+
+body {
+    background: #fff;
+    color: #444;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .subtitle, #testimonial-container blockquote > p {
+    font-family: 'Audiowide', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+a {
+    color: #dc3545;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+img.img-20h {
+    height: 20px;
+}
+
+img.img-30h {
+    height: 30px;
+}
+
+img.img-40h {
+    height: 40px;
+}
+
+img.img-80h {
+    height: 80px;
+}
+
+img.img-120h {
+    height: 120px;
+}
+
+img.img-320h {
+    height: 320px;
+}
+
+/* ===MAIN=== */
+#main {
+    height: 100%;
+}
+
+#main > .row {
+    margin: 0;
+}
+
+/* ===GENERAL=== */
+.bg-black {
+    background-color: #000 !important;
+}
+
+/* ---Jumbotrons--- */
+.jumbotron {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.jumbotron.jumbotron-live {
+    background-color: #000;
+    padding-top: 1.5em;
+    margin-bottom: 0;
+}
+
+/* ---Buttons--- */
+.btn {
+    white-space: initial;
+}
+
+/* ---Modals--- */
+.modal-toggle {
+    cursor: pointer;
+}
+
+.modal-open .modal {
+    background-color: rgba(0, 0, 0, .85);
+}
+
+#image-licence-modal .modal-body > ul > li > a {
+    font-weight: bold;
+}
+
+/* ---Streamer List--- */
+.streamer-list {
+    margin-bottom: 1rem;
+}
+
+.streamer-list > .row {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+.streamer-list > .streamer-item {
+    cursor: pointer;
+}
+
+.streamer-list-online > .streamer-item > img {
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
+}
+
+.streamer-list-online > .streamer-item.streamer-selected > img {
+    -webkit-filter: initial;
+    filter: initial;
+}
+
+.streamer-list-offline > .streamer-item > .streamer-name {
+    position: relative;
+    bottom: 30px;
+}
+
+.streamer-list > .streamer-item > .streamer-name {
+    height: 30px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .75);
+    padding-top: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.streamer-list-online > .streamer-item > .streamer-name {
+    height: 40px;
+}
+
+.streamer-list-online > .streamer-item.streamer-selected {
+    background: #000;
+    border: 4px solid #f00;
+}
+
+/* ---Testimonial--- */
+#testimonial-container blockquote > p {
+    font-size: 2em;
+}
+
+/* ===NAVIGATION=== */
+nav #navbarNav > ul > li > a {}
+
+#navigation > .row {
+    margin: 0;
+}
+
+#navigation .nav-link {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar-brand > small {
+    font-size: 0.6em;
+    position: relative;
+    top: -1px;
+}
+
+.navbar-brand > img {
+    height: 50px
+}
+
+.navbar-userlogo {
+    
+}
+
+.navbar .nav-item.dropdown > .dropdown-menu > .dropdown-divider {
+    border-top-color: #545b62;
+}
+
+/* ===TV PLAYER=== */
+#tv-player.offline {
+    font-size: 2em;
+    background-color: #080808;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+/* ===USER=== */
+.user-index .fa-stack {
+    font-size: 0.6em;
+    position: relative;
+    top: -8px;
+}
+
+.user-index .fa-stack > .fa-eye {
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+
+.user-live-badge {
+    font-size: 3em;
+    position: relative;
+    top: 3em;
+    left: -2em;
+    visibility: hidden;
+    font-size: 2em;
+    background-color: #bb0000;
+    display: inline;
+}
+
+.user-live .user-live-badge {
+    visibility: visible;
+}
+
+.user-live .user-avatar {
+    border: 13px solid #bb0000;
+}
+
+/* ---User Page--- */
+.user-page.user-live img.user-avatar {
+    position: relative;
+    left: 2em;
+}
+
+.user-page .user-page-social-media {
+    font-size: 2em;
+}
+
+/* ---User Page--- */
+.user-followage img.user-avatar {
+    max-height: 120px;
+}
+
+.user-edit ::placeholder {
+    color: #d8d8d8;
+}
+
+/* ---FOS User Bundle--- */
+#slim-dark-box {
+    height: 100%;
+    background-color: #343a40;
+    color: #e6e6e6;
+}
+
+/* ---User Streamership--- */
+.vulture-role-holder {
+    width: 200px;
+    height: 200px;
+}
+
+#settings-accordion h2 {
+    cursor: pointer;
+}
+
+/* ===FAQ=== */
+.faq-item p {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.faq-item h3, .faq-item h4 {
+    margin-top: 1.5em;
+}
+
+/* ===Shoutbox=== */
+#shoutbox img.twitch-logo {
+    max-width: 120px;
+}
+
+#shoutbox #shoutbox-list .shout-body {
+    overflow: hidden;
+}
+
+#shoutbox #shoutbox-list #shout-new-button {
+    background-color: #eee;
+}
+
+#shoutbox #shoutbox-list .shout-username {
+    font-size: 2em;
+}
+
+#shoutbox #shoutbox-list .shout-text {
+    color: #fff;
+    font-size: 2.5em;
+}
+
+/* ===QUICKNAV=== */
+#quicknav {
+    position: fixed;
+    top: 6em;
+    right: 0;
+    border-top-left-radius: .75rem;
+    border-bottom-left-radius: .75rem;
+}
+
+.quicknav ul, .quicknav li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#quicknav-alternative {
+    text-align: center;
+}
+
+#quicknav-alternative li {
+    display: inline-block;
+}
+
+/* ===LANDINGPAGE=== */
+#landingpage-teaser {
+    background: rgba(0, 0, 0, .75) !important;
+}
+
+#landingpage-teaser-bg {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+#landingpage-teaser > #landingpage-teaser-body > .img-fluid {
+    max-height:420px
+}
+
+/* ===ZAPPING=== */
+#zapping-chat, #zapping-chat > iframe {
+    height: 100%;
+}
+
+#multistream-container iframe {
+    border: 0;
+    height: 100%;
+    width: 100%
+}
+
+#accordion-multistream-chat > .card > .card-header > [data-toggle="collapse"] {
+    cursor: pointer;
+    color: #f8f9fa;
+}
+
+#accordion-multistream-chat > .card > .card-header > [data-toggle="collapse"].collapsed {
+    color: #6c757d;
+}
+
+/* ===CLIPS=== */
+#clip-modal .modal-lg {
+    width: 100%;
+    max-width: 100%;
+}
+
+#clip-modal .modal-meta {
+    text-shadow:
+        -3px -3px 0 #000,
+        3px -3px 0 #000,
+        -3px 3px 0 #000,
+        3px 3px 0 #000;
+}
+
+#clip-modal .modal-close-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#clip-index .clip {
+    cursor: pointer;
+}
+
+.twitch-clip-iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+}
+
+#clips-container #clips-carousel {
+    width: 100%;
+    height: auto;
+}
+
+#clips-container #clips-carousel .carousel-item {
+    width: 100%;
+    height: auto;
+}
+
+#clips-carousel .carousel-control-prev, #clips-carousel .carousel-control-next {
+    top: 35%;
+    bottom: 35%;
+}
+
+#clips-carousel .carousel-caption {
+    top: 2em;
+    right: 2em;
+}
+
+#clips-carousel .carousel-indicators {
+    margin-right: 0; 
+    margin-left:0;
+    top: -1em;
+    height: 1em;
+}
+
+#clips-carousel .carousel-indicators li {
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    height: 4px;
+    width: 40px;
+}
+
+#clips-carousel .carousel-indicators .active {
+    background-color: #f00;
+}
+
+.clip-list .clip {
+}
+
+/* ===LIFECYCLE=== */
+#lifecycle-application #application_applicationText {
+    min-height: 220px;
+}
+
+.modal > .modal-dialog > .modal-content > .modal-header > .modal-title {
+    width: 100%;
+}
+
+/* ===RECRUITMENT=== */
+#recruitment-index code.lifecycle-status-code {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 14px;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    box-shadow: 0 0 3px #6c757d;
+    font-size: .6em;
+}
+
+#recruitment-index .recruitment-days-count-holder > .recruitment-days-count {
+    font-size: 1em;
+}
+
+#recruitment-index .recruitment-days-count-holder {
+    width: 50px;
+}
+
+#recruitment-index .recruitment-index-item:hover {
+    outline: 4px solid #aaa;
+}
+
+/* ===TICKETS=== */
+.ticket-answer .ticket-comment-body > h5  {
+    font-size: 2em;
+}
+
+.ticket-answer .ticket-comment-body > p  {
+    font-size: 1.5em;
+}
+
+/* ===SQUADS=== */
+#squad-index .squad-zapping-buttons > a > span {
+    position: relative;
+    top: -4px;
+    font-size: 1.3em;
+}
+
+/******************* SVG ***************************/
+svg:not(:root).svg-inline--fa {
+    overflow: visible
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em
+}
+
+.svg-inline--fa.fa-lg {
+    vertical-align: -.225em
+}
+
+.svg-inline--fa.fa-w-1 {
+    width: .0625em
+}
+
+.svg-inline--fa.fa-w-2 {
+    width: .125em
+}
+
+.svg-inline--fa.fa-w-3 {
+    width: .1875em
+}
+
+.svg-inline--fa.fa-w-4 {
+    width: .25em
+}
+
+.svg-inline--fa.fa-w-5 {
+    width: .3125em
+}
+
+.svg-inline--fa.fa-w-6 {
+    width: .375em
+}
+
+.svg-inline--fa.fa-w-7 {
+    width: .4375em
+}
+
+.svg-inline--fa.fa-w-8 {
+    width: .5em
+}
+
+.svg-inline--fa.fa-w-9 {
+    width: .5625em
+}
+
+.svg-inline--fa.fa-w-10 {
+    width: .625em
+}
+
+.svg-inline--fa.fa-w-11 {
+    width: .6875em
+}
+
+.svg-inline--fa.fa-w-12 {
+    width: .75em
+}
+
+.svg-inline--fa.fa-w-13 {
+    width: .8125em
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em
+}
+
+.svg-inline--fa.fa-w-15 {
+    width: .9375em
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em
+}
+
+.svg-inline--fa.fa-w-17 {
+    width: 1.0625em
+}
+
+.svg-inline--fa.fa-w-18 {
+    width: 1.125em
+}
+
+.svg-inline--fa.fa-w-19 {
+    width: 1.1875em
+}
+
+.svg-inline--fa.fa-w-20 {
+    width: 1.25em
+}
+
+.svg-inline--fa.fa-pull-left {
+    margin-right: .3em;
+    width: auto
+}
+
+.svg-inline--fa.fa-pull-right {
+    margin-left: .3em;
+    width: auto
+}
+
+.svg-inline--fa.fa-border {
+    height: 1.5em
+}
+
+.svg-inline--fa.fa-li {
+    width: 2em
+}
+
+.svg-inline--fa.fa-fw {
+    width: 1.25em
+}
+
+.fa-layers svg.svg-inline--fa {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.fa-layers {
+    display: inline-block;
+    height: 1em;
+    position: relative;
+    text-align: center;
+    vertical-align: -.125em;
+    width: 1em
+}
+
+.fa-layers svg.svg-inline--fa {
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.fa-layers-counter,
+.fa-layers-text {
+    display: inline-block;
+    position: absolute;
+    text-align: center
+}
+
+.fa-layers-text {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform-origin: center center;
+    transform-origin: center center
+}
+
+.fa-layers-counter {
+    background-color: #ff253a;
+    border-radius: 1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #fff;
+    height: 1.5em;
+    line-height: 1;
+    max-width: 5em;
+    min-width: 1.5em;
+    overflow: hidden;
+    padding: .25em;
+    right: 0;
+    text-overflow: ellipsis;
+    top: 0;
+    -webkit-transform: scale(.25);
+    transform: scale(.25);
+    -webkit-transform-origin: top right;
+    transform-origin: top right
+}
+
+.fa-layers-bottom-right {
+    bottom: 0;
+    right: 0;
+    top: auto;
+    -webkit-transform: scale(.25);
+    transform: scale(.25);
+    -webkit-transform-origin: bottom right;
+    transform-origin: bottom right
+}
+
+.fa-layers-bottom-left {
+    bottom: 0;
+    left: 0;
+    right: auto;
+    top: auto;
+    -webkit-transform: scale(.25);
+    transform: scale(.25);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left
+}
+
+.fa-layers-top-right {
+    right: 0;
+    top: 0;
+    -webkit-transform: scale(.25);
+    transform: scale(.25);
+    -webkit-transform-origin: top right;
+    transform-origin: top right
+}
+
+.fa-layers-top-left {
+    left: 0;
+    right: auto;
+    top: 0;
+    -webkit-transform: scale(.25);
+    transform: scale(.25);
+    -webkit-transform-origin: top left;
+    transform-origin: top left
+}
+
+.fa-lg {
+    font-size: 1.3333333333em;
+    line-height: .75em;
+    vertical-align: -.0667em
+}
+
+.fa-xs {
+    font-size: .75em
+}
+
+.fa-sm {
+    font-size: .875em
+}
+
+.fa-1x {
+    font-size: 1em
+}
+
+.fa-2x {
+    font-size: 2em
+}
+
+.fa-3x {
+    font-size: 3em
+}
+
+.fa-4x {
+    font-size: 4em
+}
+
+.fa-5x {
+    font-size: 5em
+}
+
+.fa-6x {
+    font-size: 6em
+}
+
+.fa-7x {
+    font-size: 7em
+}
+
+.fa-8x {
+    font-size: 8em
+}
+
+.fa-9x {
+    font-size: 9em
+}
+
+.fa-10x {
+    font-size: 10em
+}
+
+.fa-fw {
+    text-align: center;
+    width: 1.25em
+}
+
+.fa-ul {
+    list-style-type: none;
+    margin-left: 2.5em;
+    padding-left: 0
+}
+
+.fa-ul>li {
+    position: relative
+}
+
+.fa-li {
+    left: -2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit
+}
+
+.fa-border {
+    border: solid .08em #eee;
+    border-radius: .1em;
+    padding: .2em .25em .15em
+}
+
+.fa-pull-left {
+    float: left
+}
+
+.fa-pull-right {
+    float: right
+}
+
+.fa.fa-pull-left,
+.fab.fa-pull-left,
+.fal.fa-pull-left,
+.far.fa-pull-left,
+.fas.fa-pull-left {
+    margin-right: .3em
+}
+
+.fa.fa-pull-right,
+.fab.fa-pull-right,
+.fal.fa-pull-right,
+.far.fa-pull-right,
+.fas.fa-pull-right {
+    margin-left: .3em
+}
+
+.fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear
+}
+
+.fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8)
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.fa-rotate-90 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.fa-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.fa-rotate-270 {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+
+.fa-flip-horizontal {
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1)
+}
+
+.fa-flip-vertical {
+    -webkit-transform: scale(1, -1);
+    transform: scale(1, -1)
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1)
+}
+
+:root .fa-flip-both,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-rotate-90 {
+    -webkit-filter: none;
+    filter: none
+}
+
+.fa-stack {
+    display: inline-block;
+    height: 2em;
+    position: relative;
+    width: 2.5em
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.svg-inline--fa.fa-stack-1x {
+    height: 1em;
+    width: 1.25em
+}
+
+.svg-inline--fa.fa-stack-2x {
+    height: 2em;
+    width: 2.5em
+}
+
+.fa-inverse {
+    color: #fff
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}

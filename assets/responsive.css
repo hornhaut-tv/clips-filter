@@ -1,0 +1,50 @@
+/*
+ * Bootstrap responsive breakpoints
+ *
+ * - Extra large devices (large desktops, 1200px and up)
+ * - Large devices (desktops, 992px and up)
+ * - Medium devices (tablets, 768px and up)
+ * - Small devices (landscape phones, 576px and up)
+ */
+
+/* MAX-WIDTH STATEMENTS (from large to small) */
+@media (max-width: 992px) {
+    .display-1, .display-2, .display-3, .display-4 {
+        font-size: 3rem;
+    }
+
+    .user-page .fa-stack {
+        top: -20px;
+    }
+
+    .user-page .fa-stack > .fa-eye {
+        left: -8px;
+        top: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .display-1, .display-2, .display-3, .display-4 {
+        font-size: 2rem;
+    }
+}
+
+/* MIN-WIDTH STATEMENTS (from small to large) */
+@media (min-width: 576px) {
+    .modal-lg {
+        max-width: 780px;
+    }
+}
+
+@media (min-width: 992px) {
+    #navigation .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .modal-lg {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {}
